@@ -25,10 +25,8 @@ const Wishlist = () => {
         
         const start = 20 * (page - 1);
 
-        console.log(wishlist);
-
         setMovies(wishlist.slice(start, start + 20));
-    }, [page])
+    }, [page, wishlist])
 
 
     if(wishlist.length === 0) {

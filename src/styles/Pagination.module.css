@@ -5,6 +5,10 @@
     gap: 10px;
 }
 
+.paginationContainer span {
+    color: #fff;
+}
+
 .paginationButton, .pageNumber {
     padding: 8px 12px;
     border: 1px solid #ddd;
