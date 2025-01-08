@@ -1,0 +1,19 @@
+.movieList {
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 1.5rem;
+}
+
+.dummyPagination {
+    height: 2em;
+    background-color: #fff;
+}
+
+.dummyPagination {
+    height: 2em;
+    background-color: #fff;
+}

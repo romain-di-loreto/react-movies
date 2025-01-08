@@ -1,0 +1,32 @@
+.movieList {
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 1.5rem;
+}
+
+.dummyPagination {
+    height: 2em;
+    background-color: #fff;
+}
+
+.dummyPagination {
+    height: 2em;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.searchbarContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}

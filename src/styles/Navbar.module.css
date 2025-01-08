@@ -1,0 +1,30 @@
+body {
+    padding-top: 3.5rem;    
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    background-color: #fff;
+    padding: 1em 2em;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.links a {
+    flex-direction: row;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 900;
+}
+
+nav + div {
+    padding: 1rem 0;
+}

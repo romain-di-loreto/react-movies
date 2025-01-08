@@ -1,0 +1,30 @@
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paginationButton, .pageNumber {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.paginationButton:disabled, .disabled {
+background: #e0e0e0;
+cursor: not-allowed;
+}
+
+.pageNumber.active {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.pageNumber:hover, .paginationButton:not(:disabled):hover {
+    background: #ddd;
+}

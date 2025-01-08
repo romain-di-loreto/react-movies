@@ -1,0 +1,102 @@
+.movieCard {
+  list-style: none;
+  position: relative;
+  width: 18.75em;
+  height: 28.125em;
+  border-radius: .75em;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: #666;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 .5em rgba(255, 255, 255, 0.5);
+}
+
+.movieDetails {
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+  padding: 1em;
+  box-shadow: 0 -.625em 1.25em rgba(255, 255, 255, 0.5);
+}
+
+.movieTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: .5em;
+  color: #333;
+}
+
+.movieReleaseDate,
+.movieGenres {
+  font-size: 0.9em;
+  color: #555;
+  margin: .25em 0;
+}
+
+.movieOverview {
+  font-size: 0.9em;
+  color: #333;
+  margin: .75em 0;
+  line-height: 1.4;
+  overflow: hidden;
+  max-height: 0em; /* To hide it unless the card is hovered */
+}
+
+.movieOverview::before {
+  content: "Overview : ";
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.movieCard:hover .movieOverview {
+  max-height: 13em; 
+}
+
+.movieMetrics {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-top: .5em;
+}
+
+.movieRating {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.moviePopularity {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.favoriteButton {
+  display: none;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  /* color: rgba(255, 255, 255, 0.7); */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.25);
+}
+
+.movieCard:hover .favoriteButton {
+  display: inline;
+}

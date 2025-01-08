@@ -1,0 +1,28 @@
+.actorList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em 2em;
+    max-width: 50em;
+}
+
+.actorCard {
+    width: 7em;
+    height: 7em;
+    text-align: center;
+}
+
+.actorCard > img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.actorCard > p {
+    text-align: center;
+    margin: 0;
+}

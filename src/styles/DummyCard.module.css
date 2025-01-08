@@ -1,0 +1,91 @@
+.dummyCard {
+    list-style: none;
+    position: relative;
+    width: 18.75em;
+    height: 28.125em;
+    border-radius: .75em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #666;
+    --dummy-text-color-1: #444;
+    --dummy-text-color-2: #555;
+    user-select: none;  
+  }
+  
+  .dummyDetails {
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    padding: 1em;
+    box-shadow: 0 -.625em 1.25em rgba(255, 255, 255, 0.5);
+    user-select: none;
+  }
+
+.dummyTitle, 
+.dummyReleaseDate, 
+.dummyGenres, 
+.dummyOverview, 
+.dummyRating, 
+.dummyPopularity{
+    border-radius: .25em;
+}
+
+  .dummyTitle, .dummyOverview {
+    color: transparent;
+    background-color: var(--dummy-text-color-1);
+  }
+  
+  .dummyTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: .5em;    
+    width: 8em;
+    user-select: none;
+  }
+  
+  .dummyReleaseDate,
+  .dummyGenres {
+    font-size: 0.9em;
+    color: transparent;
+    margin: .25em 0;
+    background-color: var(--dummy-text-color-2);
+    width: 8em;
+    user-select: none;
+  }
+  
+  .dummyOverview {
+    font-size: 0.9em;
+    margin: .75em 0;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3.6em; /* To limit overview to 2 lines */
+    user-select: none;
+  }
+  
+  .dummyMetrics {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-top: .5em;
+    user-select: none;
+  }
+  
+  .dummyRating {
+    color: transparent;
+    font-weight: bold;
+    background-color: #ffc107;
+    user-select: none;
+  }
+  
+  .dummyPopularity {
+    color: transparent;
+      font-weight: bold;
+      background-color: #f44336;
+      user-select: none;
+  }
+  
